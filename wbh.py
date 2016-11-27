@@ -27,9 +27,6 @@ def open():
 
 def main(arguments):
     parser = argparse.ArgumentParser('wbh', description=__doc__)
-    parser.add_argument('--ip', '-i',
-                        help="Allowed ip to send queries",
-                        required=True)
     parser.add_argument('--host', '-o',
                         help="Listening host (%s by default)" % default_host,
                         default=default_host,
